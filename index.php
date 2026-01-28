@@ -626,7 +626,7 @@
                                 <div class="article-content">
                                     <span class="article-tag">Digital</span>
                                     <span class="read-time">5 min read</span>
-                                    <h3 class="article-title">Nouvelle interface pour la gestion des impays et dépenses</h3></a>
+                                    <a href=""><h3 class="article-title">Nouvelle interface pour la gestion des impays et dépenses</h3></a>
                                 </div>
                             </div>
                             
@@ -636,7 +636,7 @@
                                 <div class="article-content">
                                     <span class="article-tag">Digital</span>
                                     <span class="read-time">7 min read</span>
-                                    <h3 class="article-title">Nouvelle interface pour la gestion des impays et dépenses</h3></a>
+                                    <a href=""><h3 class="article-title">Nouvelle interface pour la gestion des impays et dépenses</h3></a>
                                 </div>
                             </div>
                             
@@ -656,7 +656,7 @@
                                 <div class="article-content">
                                     <span class="article-tag">Digital</span>
                                     <span class="read-time">5 min read</span>
-                                    <h3 class="article-title">Nouvelle interface pour la gestion des impays et dépenses</h3></a>
+                                    <a href=""><h3 class="article-title">Nouvelle interface pour la gestion des impays et dépenses</h3></a>
                                 </div>
                             </div>
                             
@@ -666,7 +666,7 @@
                                 <div class="article-content">
                                     <span class="article-tag">Digital</span>
                                     <span class="read-time">7 min read</span>
-                                    <h3 class="article-title">Nouvelle interface pour la gestion des impays et dépenses</h3></a>
+                                    <a href=""><h3 class="article-title">Nouvelle interface pour la gestion des impays et dépenses</h3></a>
                                 </div>
                             </div>
                             
@@ -694,7 +694,12 @@
                     <div class="col-md-6">
                         <div class="newsletter_form position-relative">
                             <input type="email" placeholder="Votre adresse e-mail" class="newsletter_input">
-                            <button type="submit" class="newsletter_btn">S'abonner <img src="assets/images/subs_right.png" alt=""></button>
+                           <button type="submit" class="newsletter_btn">
+                                <span class="btn-text">S'abonner</span>
+                                <span class="btn-icon">
+                                    <img src="assets/images/subs_right.png" alt="">
+                                </span>
+                            </button>
                             <p class="terms_newsletter">Nous serons dans votre boîte de réception tous les matins du lundi au samedi avec toutes les principales actualités économiques de la journée, des histoires inspirantes, les meilleurs conseils et des reportages exclusifs de Botischool <br> Je comprends que les données que je soumets seront utilisées pour me fournir les produits et/ou services décrits ci-dessus et les communications en rapport avec ceux-ci.
                                 <br><br>
                                 
