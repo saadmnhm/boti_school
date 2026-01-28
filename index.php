@@ -40,13 +40,13 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">L’expérience "B”</a>
+                        <a class="nav-link active" aria-current="page" href="#experience">L’expérience "B”</a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" href="#">Aller plus loin</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                     <div class="btn_demo">
@@ -66,9 +66,9 @@
         </div>
         <div class="offcanvas-body">
           <ul>
-                <li><a class="nav-link active" aria-current="page" href="#">L’expérience "B”</a></li>
+                <li><a class="nav-link active" aria-current="page" href="#experience">L’expérience "B”</a></li>
                 <li><a class="nav-link" href="#">Aller plus loin</a></li>
-                <li><a class="nav-link" href="#">Contact</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
             <div class="btn_demo">
                 <button class="openStepperBtn" type="button">Je souhaite une Démo</button>
@@ -155,7 +155,7 @@
     <section class="services">
 
         <div class="container  text-center">
-            <div class="experience">
+            <div class="experience" id="experience">
                 <div class="tag_exp_header">
                     <span>Solutions adaptées</span>
                     <h2>L’expérience "B" </h2>
@@ -711,7 +711,7 @@
         </div>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
         <div class="container">
 
             <div class="tag_exp_header text-center">

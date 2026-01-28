@@ -1119,6 +1119,11 @@ font-size: 16px;
     font-size: 14px;
     padding: 13px 40px;
 }
+.btn-vents:hover {
+    background: #F0047F;
+    color: white;
+    transition: all 0.3s ease;
+}
 
 .btn-outline {
     background: #fff;
@@ -1133,13 +1138,21 @@ font-size: 16px;
     justify-content: center;
     align-items: center;
 }
-
+.btn-outline:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
 .btn-outline.full {
   width: 100%;
   margin-bottom: 20px;
 gap: 20px; 
 }
-
+.btn-outline.full:hover {
+    background: #F0047F;
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
 .actions {
   display: flex;
   gap: 10px;

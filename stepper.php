@@ -118,7 +118,7 @@
                     <i class="fas fa-check-circle success-icon"></i>
                     <h2 class="success-title">Votre demande a été envoyée.</h2>
                     <p class="success-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    <button class="btn-continue" id="closeSuccess">Fermer</button>
+                    <button class="btn-continue" id="closeSuccess" style="max-width: 480px;">Fermer</button>
                 </div>
             </div>
         </div>

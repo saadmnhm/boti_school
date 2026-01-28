@@ -356,8 +356,9 @@
 }
 
 .success-title {
-    font-size: 32px;
-    color: #2ecc71;
+    font-size: 25px;
+    color: var(--primary-purple);
+    font-weight: 600;
     margin-bottom: 15px;
 }
 
