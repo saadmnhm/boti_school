@@ -30,6 +30,10 @@
     .button-funtion button {
         flex: 0 0 calc(50% - 10px);
     }
+    
+    .mobile-tab-nav {
+        display: none !important;
+    }
 }
 
 /* Mobile: 1 column */
@@ -91,11 +95,60 @@
         box-shadow: 0 3px 21px 0 #00000014;
         text-align: center !important;
         border: 1px solid #0000000d;
-        margin-bottom: 30px;
+        margin: 20px 0;
     }
     .services .functionalities {
         margin-top: 30px;
     }
+    .services .functionalities .tag_exp_header{
+        margin-bottom: 30px;
+    }
+    .mobile-tab-nav {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 0 20px;
+    }
+    
+    .tab-nav-btn {
+        background: #F8539F;
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .tab-nav-btn:disabled {
+        background: #DED7FB;
+        color: #978FB9;
+        cursor: not-allowed;
+    }
+    
+    .tab-nav-btn:not(:disabled):active {
+        transform: scale(0.95);
+    }
+    
+    .current-tab-indicator {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--primary-purple);
+        text-align: center;
+        flex: 1;
+        padding: 0 10px;
+    }
+    
+    .button-funtion {
+        display: none !important;
+    }
+    
     .services .functionalities .tabs_function {
         padding: 0 40px 0 40px;
     }
@@ -110,6 +163,9 @@
     }
     .services .functionalities .tabs_function h3 {
         font-size: 25px;
+    }
+    .services .functionalities .function_tab{
+        margin-top: 0px !important;
     }
     .engagment-first-col {
         padding: 0 40px 0 40px;
@@ -182,5 +238,184 @@
     }
     .experience_cards{
         padding: 0 30px;
+    }
+
+    /* Contact Section Mobile Tabs */
+    .mobile-contact-nav {
+        display: flex !important;
+        justify-content: space-between;
+        gap: 15px;
+        margin: 30px 20px 20px;
+        padding: 0;
+        position: relative;
+    }
+    
+    .mobile-contact-nav::after {
+        content: '';
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: #E5E5E5;
+        z-index: 0;
+    }
+    
+    .mobile-contact-btn {
+        flex: 1;
+        background: transparent;
+        border: none;
+        padding: 15px 5px 10px;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.3s ease;
+    }
+    
+    .mobile-contact-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 10px;
+        transition: all 0.3s ease;
+    }
+
+    
+    .mobile-contact-icon img {
+        width: 60px;
+        height: auto;
+    }
+    
+    .mobile-contact-btn h4 {
+        font-size: 11px;
+        font-weight: 600;
+        color: #B4AECC;
+        margin: 0;
+        transition: color 0.3s ease;
+    }
+    
+    .tab-underline {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: transparent;
+        transition: all 0.3s ease;
+        border-radius: 3px 3px 0 0;
+        z-index: 1;
+    }
+    
+    .mobile-contact-btn.active h4 {
+        color: #241759;
+    }
+    
+    .mobile-contact-btn.active .tab-underline {
+        background: linear-gradient(90deg, #FFC465, #FF8791, #F976E9, #B093FF, #9092FF, #38B3FF);
+    }
+    
+    .mobile-contact-btn.active .mobile-contact-icon {
+        transform: scale(1.1);
+    }
+    
+    /* Hide non-active cards on mobile */
+    .contact-cards {
+        display: block !important;
+        background-image: none;
+        padding: 20px;
+    }
+    
+    .contact-card {
+        display: none;
+        margin-bottom: 0;
+    }
+    
+    .contact-card.active-mobile {
+        display: block !important;
+    }
+    
+    .contact-card h3 {
+        font-size: 24px;
+        margin: 20px 0;
+    }
+    
+    .mini-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .mini-card {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .contact-card{
+        padding: 0;
+        background: none;       
+    }
+    .contact-card h3{
+        display: none;
+    }
+    .actions{
+        display: block;
+        .btn-appel,
+        .btn-whatsapp{
+            width: 100%;
+            margin-bottom: 15px;
+            height: 55px;
+        }
+    }
+    .carousel-container{
+        display: none !important;
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .related-header {
+        flex-direction: column;
+        align-items: end;
+        gap: 20px;
+    }
+    
+    .related-articles-carousel .owl-nav button {
+        margin: 0 -40px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .related-articles-section {
+        padding: 40px 0;
+    }
+    
+    .related-header h2 {
+        font-size: 24px;
+    }
+    
+    .article-card {
+        margin: 5px;
+    }
+    
+    .related-articles-carousel .owl-nav button {
+        display: none !important;
+    }
+    .newsletter_blog {
+        margin: 0px 25px;
+    }
+    .newsletter_blog .col-md-2 img{
+      display: none !important;
+    }
+    .newsletter_form .newsletter_btn {
+        right: 5% !important;
+        padding: 13px 10px !important;
+    
+    }
+    .newsletter_blog .newsletter_form{
+      padding: 0px 12px !important;
     }
 }

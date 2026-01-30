@@ -30,26 +30,73 @@ setInterval(() => {
 document.addEventListener('DOMContentLoaded', function() {
   const tabButtons = document.querySelectorAll('.btn_tab');
   const tabContents = document.querySelectorAll('.tab-content-item');
+  let currentTabIndex = 0;
   
   if (tabContents.length > 0) {
     tabContents[0].classList.add('active');
   }
   
+  // Desktop: Click on tab buttons
   tabButtons.forEach((button, index) => {
     button.addEventListener('click', function() {
-      tabButtons.forEach(btn => btn.classList.remove('active'));
-      
-      this.classList.add('active');
-      
-      tabContents.forEach(content => {
-        content.classList.remove('active');
-      });
-      
-      if (tabContents[index]) {
-        tabContents[index].classList.add('active');
-      }
+      currentTabIndex = index;
+      switchTab(index);
     });
   });
+  
+  // Mobile: Navigation buttons
+  const prevBtn = document.getElementById('prevTabBtn');
+  const nextBtn = document.getElementById('nextTabBtn');
+  const indicator = document.getElementById('currentTabIndicator');
+  
+  function switchTab(index) {
+    tabButtons.forEach(btn => btn.classList.remove('active'));
+    tabContents.forEach(content => content.classList.remove('active'));
+    
+    if (tabButtons[index]) {
+      tabButtons[index].classList.add('active');
+    }
+    if (tabContents[index]) {
+      tabContents[index].classList.add('active');
+    }
+    
+    updateMobileNav();
+  }
+  
+  function updateMobileNav() {
+    if (indicator && tabButtons[currentTabIndex]) {
+      indicator.textContent = tabButtons[currentTabIndex].textContent;
+    }
+    
+    if (prevBtn) {
+      prevBtn.disabled = currentTabIndex === 0;
+    }
+    
+    if (nextBtn) {
+      nextBtn.disabled = currentTabIndex === tabButtons.length - 1;
+    }
+  }
+  
+  if (prevBtn) {
+    prevBtn.addEventListener('click', function() {
+      if (currentTabIndex > 0) {
+        currentTabIndex--;
+        switchTab(currentTabIndex);
+      }
+    });
+  }
+  
+  if (nextBtn) {
+    nextBtn.addEventListener('click', function() {
+      if (currentTabIndex < tabButtons.length - 1) {
+        currentTabIndex++;
+        switchTab(currentTabIndex);
+      }
+    });
+  }
+  
+  // Initialize mobile navigation
+  updateMobileNav();
 });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -227,4 +274,118 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Check on page load (in case section is already visible)
   checkScroll();
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const partnerImages = document.querySelectorAll('.partners_img img');
+  
+  partnerImages.forEach(img => {
+    const originalSrc = img.src;
+    const hoverSrc = originalSrc.replace('_colored', '');
+    
+    img.addEventListener('mouseenter', function() {
+      this.src = hoverSrc;
+    });
+    
+    img.addEventListener('mouseleave', function() {
+      this.src = originalSrc;
+    });
+  });
+});
+
+
+
+
+// Contact Section Mobile Tabs
+document.addEventListener('DOMContentLoaded', function() {
+  const contactButtons = document.querySelectorAll('.mobile-contact-btn');
+  const contactCards = document.querySelectorAll('.contact-card');
+  
+  if (contactButtons.length > 0 && contactCards.length > 0) {
+    // Initially show first card on mobile
+    function initMobileContactTabs() {
+      if (window.innerWidth <= 767) {
+        contactCards.forEach((card, index) => {
+          if (index === 0) {
+            card.classList.add('active-mobile');
+          } else {
+            card.classList.remove('active-mobile');
+          }
+        });
+      } else {
+        // On desktop, show all cards
+        contactCards.forEach(card => {
+          card.classList.add('active-mobile');
+        });
+      }
+    }
+    
+    // Handle button clicks
+    contactButtons.forEach((button) => {
+      button.addEventListener('click', function() {
+        if (window.innerWidth <= 767) {
+          // Remove active class from all buttons
+          contactButtons.forEach(btn => btn.classList.remove('active'));
+          
+          // Add active class to clicked button
+          this.classList.add('active');
+          
+          // Hide all cards
+          contactCards.forEach(card => card.classList.remove('active-mobile'));
+          
+          // Show selected card
+          const cardIndex = parseInt(this.getAttribute('data-card'));
+          if (contactCards[cardIndex]) {
+            contactCards[cardIndex].classList.add('active-mobile');
+          }
+        }
+      });
+    });
+    
+    // Initialize on load
+    initMobileContactTabs();
+    
+    // Re-initialize on window resize
+    window.addEventListener('resize', initMobileContactTabs);
+  }
+});
+
+
+
+
+// Card Flip Effect for Experience Cards
+document.addEventListener('DOMContentLoaded', function() {
+  const cards = document.querySelectorAll('.card_exp');
+  
+  cards.forEach(card => {
+    // Create wrapper
+    const wrapper = document.createElement('div');
+    wrapper.className = 'card_exp_wrapper';
+    card.parentNode.insertBefore(wrapper, card);
+    wrapper.appendChild(card);
+    
+    // Get elements
+    const img = card.querySelector('img');
+    const h3 = card.querySelector('h3');
+    const p = card.querySelector('p');
+    
+    if (img && h3 && p) {
+      // Create front and back
+      const front = document.createElement('div');
+      front.className = 'card_exp_front';
+      front.appendChild(img.cloneNode(true));
+      front.appendChild(h3.cloneNode(true));
+      front.appendChild(p.cloneNode(true));
+      
+      const back = document.createElement('div');
+      back.className = 'card_exp_back';
+      back.appendChild(p.cloneNode(true));
+      
+      // Clear card and add front/back
+      card.innerHTML = '';
+      card.appendChild(front);
+      card.appendChild(back);
+    }
+  });
 });

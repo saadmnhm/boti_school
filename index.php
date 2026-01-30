@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Boti School - Plateforme de gestion Éducative Tout-en-un    </title>
-  <meta property="og:title" content="Boti School - Plateforme de gestion Éducative Tout-en-un">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="http://boti.educationassets/img/logo.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:site_name" content="BOTI SCHOOL">
-  <meta name="keywords" content="Boti School,Plateforme éducative,Gestion scolaire,Application scolaire,Gestion administrative école,Mots-clés secondaires,Gestion pédagogique,Digitalisation école,Communication école,Gestion financière école,Plateforme école web mobile,Administration scolaire numérique,Solution gestion école,Écosystème éducatif digital,Gestion des performances scolaires,Transport scolaire,Boti School,Educational platform,School management,School application,School administrative management,Pedagogical management,School digitalization,School communication,School financial management,Mobile web school platform,Digital school administration,School management solution,Digital educational ecosystem,School performance,managemen,School transport,بوتي سكول, منصة تعليمية,إدارة المدرسة,تطبيق مدرسي,إدارة مدرسية إدارية,إدارة تربوية,رقمنة المدرسة,التواصل المدرسي,إدارة مالية مدرسية,منصة مدرسية للويب والجوال,إدارة مدرسية رقمية,حل إدارة المدرسة,النظام البيئي التعليمي الرقمي,إدارة الأداء المدرسي,النقل المدرسي">
-  <meta name="description" content="Application web et mobile pour Écoles : Gestion administrative, pédagogique, financière et  communication simples et efficaces">
-  <meta property="og:description" content="Application web et mobile pour Écoles : Gestion administrative, pédagogique, financière et  communication simples et efficaces">
-  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-  <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <meta charset="UTF-8">
+    <title>Boti School - Plateforme de gestion Éducative Tout-en-un    </title>
+    <meta property="og:title" content="Boti School - Plateforme de gestion Éducative Tout-en-un">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://boti.educationassets/img/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:site_name" content="BOTI SCHOOL">
+    <meta name="keywords" content="Boti School,Plateforme éducative,Gestion scolaire,Application scolaire,Gestion administrative école,Mots-clés secondaires,Gestion pédagogique,Digitalisation école,Communication école,Gestion financière école,Plateforme école web mobile,Administration scolaire numérique,Solution gestion école,Écosystème éducatif digital,Gestion des performances scolaires,Transport scolaire,Boti School,Educational platform,School management,School application,School administrative management,Pedagogical management,School digitalization,School communication,School financial management,Mobile web school platform,Digital school administration,School management solution,Digital educational ecosystem,School performance,managemen,School transport,بوتي سكول, منصة تعليمية,إدارة المدرسة,تطبيق مدرسي,إدارة مدرسية إدارية,إدارة تربوية,رقمنة المدرسة,التواصل المدرسي,إدارة مالية مدرسية,منصة مدرسية للويب والجوال,إدارة مدرسية رقمية,حل إدارة المدرسة,النظام البيئي التعليمي الرقمي,إدارة الأداء المدرسي,النقل المدرسي">
+    <meta name="description" content="Application web et mobile pour Écoles : Gestion administrative, pédagogique, financière et  communication simples et efficaces">
+    <meta property="og:description" content="Application web et mobile pour Écoles : Gestion administrative, pédagogique, financière et  communication simples et efficaces">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/stepper.css">
-  <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/stepper.css">
+    <link rel="stylesheet" href="assets/css/media.css">
 </head>
 <body >
     <header>
@@ -85,14 +87,14 @@
             <div class="row">
                 <div class="col-md-6 banner_home_left">
                     <h1>
-                        BOTI School <br> Plateforme digitale tout-en-un qui connecte <span>la Direction</span>
+                        BOTI School <br> Plateforme digitale tout-en-un qui connecte <span class="la_direction">la Direction</span>
                     </h1>
                     <p>pour une école moderne,efficace et intelligente</p>
                     <span class="pill pill gradient-border"><img src="assets/images/small_logos.png">+200 écoles / campus utilisent notre technologies</span>
                 </div>
                 <div class="col-md-6 banner_home_right">
 
-                    <div class="carousel-container">
+                    <div class="carousel-container ">
                         <div class="card-stack" id="cardStack">
                             <div class="card active">
                             <div class="stars">★★★★★</div>
@@ -143,12 +145,12 @@
 
         </div>
         <div class="partners_img text-center">
-            <img src="assets/images/digishare.png" alt="Boti School - Plateforme de gestion Éducative Tout-en-un">
-            <img src="assets/images/payzone.svg" alt="Boti School - Plateforme de gestion Éducative Tout-en-un">
-            <img src="assets/images/cmi.svg" alt="Boti School - Plateforme de gestion Éducative Tout-en-un">
-            <img src="assets/images/enjoyai.svg" alt="Boti School - Plateforme de gestion Éducative Tout-en-un">
-            <img src="assets/images/ai-crafters.svg" alt="Boti School - Plateforme de gestion Éducative Tout-en-un">
-            <img src="assets/images/eprogram.svg" alt="Boti School - Plateforme de gestion Éducative Tout-en-un">
+            <img src="assets/images/digishare_colored.png" alt="Boti School - Plateforme de gestion Éducative Tout-en-un">
+            <img src="assets/images/payzone_colored.svg" alt="Boti School - Plateforme de gestion Éducative Tout-en-un">
+            <img src="assets/images/cmi_colored.svg" alt="Boti School - Plateforme de gestion Éducative Tout-en-un" style="width: 63px;">
+            <img src="assets/images/enjoyai_colored.svg" alt="Boti School - Plateforme de gestion Éducative Tout-en-un">
+            <img src="assets/images/ai-crafters_colored.svg" alt="Boti School - Plateforme de gestion Éducative Tout-en-un">
+            <img src="assets/images/eprogram_colored.svg" alt="Boti School - Plateforme de gestion Éducative Tout-en-un">
         </div>
     </section>
 
@@ -236,18 +238,27 @@
                 </div>
 
                 <div class="function_tab ">
+                    <div class="mobile-tab-nav d-md-none">
+                        <button class="tab-nav-btn prev-tab" id="prevTabBtn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="current-tab-indicator" id="currentTabIndicator">Gestion utilisateurs</div>
+                        <button class="tab-nav-btn next-tab" id="nextTabBtn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
                     <div class="button-funtion mb-5 pb-2">
                         <button class="btn_tab active">Gestion utilisateurs</button>
-                        <button class="btn_tab">Communication</button>
-                        <button class="btn_tab">Gestion financière</button>
-                        <button class="btn_tab">Suivi pédagogique</button>
-                        <button class="btn_tab">Analytique & Reporting</button>
+                        <button class="btn_tab">Gestion utilisateurs2</button>
+                        <button class="btn_tab">Gestion utilisateurs3</button>
+                        <button class="btn_tab">Gestion utilisateurs4</button>
+                        <button class="btn_tab">Gestion utilisateurs5</button>
                     </div>  
                     
                     <div class="tab-content-item active">
                         <div class="row">
                             <div class="tabs_function col-md-6 text-start align-content-center">
-                                <h3>Gestion des utilisateurs</h3>
+                                <h3>Gestion utilisateurs</h3>
                                 <ul class="list_features p-0">
                                     <li><img src="assets/images/check_mark.png" alt=""><p>Ajoutez ou supprimez des utilisateurs.</p></li>
                                     <li><img src="assets/images/check_mark.png" alt=""><p>Modérez-les tout au long de leur cycle de vie.</p></li>
@@ -616,7 +627,7 @@
             </div>
         <div class="related-articles-section">
                 <div class="related-header">
-                    <button class="btn-all-pub">Tout les pub <i class="arrow-right">→</i></button>
+                    <button class="btn-all-pub">Toutes <div class="article-arrow"><i class="arrow-right">→</i></div></button>
                 </div>
                 
                 <div class="owl-carousel owl-theme related-articles-carousel">
@@ -719,15 +730,40 @@
                 <h2>Nos équipes à votre service</h2>
             </div>
 
-            <div class="contact-cards mt-5 pt-5 mb-5 pb-5">
+            <!-- Mobile Tab Navigation -->
+            <div class="mobile-contact-nav d-md-none">
+                <button class="mobile-contact-btn active" data-card="0">
+                    <div class="mobile-contact-icon orange">
+                        <img src="assets/images/vents.png" alt="">
+                    </div>
+                    <h4>Vents</h4>
+                    <div class="tab-underline"></div>
+                </button>
+                <button class="mobile-contact-btn" data-card="1">
+                    <div class="mobile-contact-icon blue">
+                        <img src="assets/images/support.png" alt="">
+                    </div>
+                    <h4>Support - <br>Customer Success</h4>
+                    <div class="tab-underline"></div>
+                </button>
+                <button class="mobile-contact-btn" data-card="2">
+                    <div class="mobile-contact-icon pink">
+                        <img src="assets/images/media.png" alt="">
+                    </div>
+                    <h4>Partenariat <br> & Media</h4>
+                    <div class="tab-underline"></div>
+                </button>
+            </div>
+
+            <div class="contact-cards ">
 
                 <!-- Card 1 -->
-                <div class="contact-card">
-                    <div class="icon orange">
+                <div class="contact-card" data-card-index="0">
+                    <div class="icon orange d-none d-md-flex">
                         <img src="assets/images/vents.png" alt="">
                     </div>
                     <h3>Vents</h3>
-                    <p>
+                    <p class="contact_par">
                         Intéressés par une de nos solutions ?
                         Contactez-nous sur Whatsapp ou par téléphone,
                         nous nous ferons un plaisir de vous accompagner.
@@ -735,77 +771,85 @@
 
                     <button class="openStepperBtn btn-primary btn-vents">
                         Demander une Démo
-                        <span>→</span>
+                        <div class="article-arrow"><i class="arrow-right">→</i></div>
                     </button>
 
                     <div class="actions">
-                        <a class="btn-outline">
-                            <img src="assets/images/whatsapp.png" alt="">    
-                            Whatsapp
+                        <a class="btn-whatsapp">
+                            <div class="icon-wts-appel">
+                                <img src="assets/images/whatsapp.png" alt="">    
+                            </div>                             
+                            <p class="m-0 text-start">Whatsapp</p>
                         </a>
-                        <a class="btn-outline">
-                            <img src="assets/images/appel.png" alt=""> 
-                            <p class="m-0 text-start" style="font-size: 14px;">Appeler directement</p>
+                        <a class="btn-appel">
+                            <div class="icon-wts-appel">
+                                <img src="assets/images/appel.png" alt="">
+                            </div> 
+                            <p class="m-0 text-start">Appeler directement</p>
                         </a>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="contact-card active">
-                    <div class="icon blue">
+                <div class="contact-card" data-card-index="1">
+                    <div class="icon blue d-none d-md-flex">
                         <img src="assets/images/support.png" alt="">
                     </div>
                     <h3>Support -<br>Customer Success</h3>
-                    <p>
+                    <p class="contact_par">
                         Vous faites partie d’une école partenaire ?
                         Différents canaux sont disponibles
                     </p>
 
                     <div class="mini-actions">
-                        <div class="mini-card">
-                            <a href="">
+                        <a href="" class="mini-card">
+                            <div class="mini_card_img" >
                                 <img src="assets/images/help.png" alt="">
-                                <p>Espace Help</p>
-                            </a>
-                        </div>
-                        <div class="mini-card">
-                            <a href="">
+                            </div>
+                            <p>Espace Help</p>
+                        </a>
+                        <a href="" class="mini-card">
+                            <div class="mini_card_img" >
                                 <img src="assets/images/whatsapp.png" alt="">
-                                <p>Groupe Whatsapp dédié</p>
-                            </a>
-                        </div>
-                        <div class="mini-card">
-                            <a href="">
+                            </div>
+                            <p>Groupe Whatsapp dédié</p>
+                        </a>
+                        <a href="" class="mini-card">
+                            <div  class="mini_card_img">
                                 <img src="assets/images/doc.png" alt="">
-                                <p>Espace Documentation</p>
-                            </a>
-                        </div>
+                            </div>
+                            <p>Espace Documentation</p>
+                        </a>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="contact-card">
-                    <div class="icon pink">
+                <div class="contact-card" data-card-index="2">
+                    <div class="icon pink d-none d-md-flex">
                         <img src="assets/images/media.png" alt="">
                     </div>
                     <h3>Partenariat<br>& Media</h3>
-                    <p>
+                    <p class="contact_par">
                         Contactez-nous via l’un des canaux suivants
                     </p>
 
-                    <button class="btn-outline full">
+                    <button class="btn-corde ">
                         Laissez-nous vos coordonnées
                          <img src="assets/images/coordonnes.png" alt="">
                     </button>
 
                     <div class="actions">
-                        <a class="btn-outline">
-                            <img src="assets/images/whatsapp.png" alt="">    
-                            Whatsapp
+                        <a class="btn-whatsapp">
+                            <div class="icon-wts-appel">
+                                <img src="assets/images/whatsapp.png" alt="">    
+                            </div>                             
+                            <p class="m-0 text-start">Whatsapp</p>
                         </a>
-                        <a class="btn-outline">
-                            <img src="assets/images/appel.png" alt=""> 
-                            <p class="m-0 text-start" style="font-size: 14px;">Appeler directement</p>
+                        <a class="btn-appel">
+                            <div class="icon-wts-appel">
+                                <img src="assets/images/appel.png" alt="">
+                            </div> 
+                            <p class="m-0 text-start">Appeler directement</p>
                         </a>
                     </div>
                 </div>

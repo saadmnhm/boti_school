@@ -15,14 +15,14 @@
                 <h2 class="step-title">Êtes-vous</h2>
                 
                 <div class="cards-container">
-                    <div class="cards_stepper" data-value="option1">
+                    <div class="cards_stepper cards-first-step" data-value="option2">
                         <div>
 
                             <img src="assets/images/stp1_icon.png" alt="">
                         </div>
                         <p class="card-text">Tuteur d'un élève</p>
                     </div>
-                    <div class="cards_stepper" data-value="option2">
+                    <div class="cards_stepper cards-first-step" data-value="option1">
                         <div>
                             <img src="assets/images/stp1_2icon.png" alt="">
                         </div>
@@ -36,8 +36,7 @@
                 <button class="btn-continue" id="continueStep1" disabled>Continuer</button>
             </div>
 
-            <!-- Step 2 -->
-            <div class="step step-2">
+            <div class="step step-2a">
                 <h3 class="step-2-header">Vous assurez quels cycles d'enseignement</h3>
 
                 <div class="cards-container cards-4">
@@ -109,7 +108,158 @@
                 </div>
                 <p class="oblig-chmp">* pour les champs obligatoire</p>
 
-                <button class="btn-continue" id="continueStep2" disabled>Demander une présentation</button>
+                <button class="btn-continue" id="continueStep2a" disabled>Demander une présentation</button>
+            </div>
+
+            <div class="step step-2b">
+                <h2 class="step-title">Vous recontrez des difficultés pour vous connecter a votre compte.</h2>
+                
+                <div class="choice-container">
+                    <button class="choice-btn" id="choiceBtn1">
+                        <img src="assets/images/stp1_icon.png" alt="">
+                        <p>Contactez votre administration</p>
+                        <p class="arabic-text">تواصل مباشرة مع الإدارة</p>
+                    </button>
+                    
+                    <div class="choice-divider">
+                        <div class="divider-line"></div>
+                        <span class="divider-text">Ou</span>
+                        <div class="divider-line"></div>
+                    </div>
+                    
+                    <button class="choice-btn" id="choiceBtn2">
+                        <img src="assets/images/stp1_2icon.png" alt="">
+                        <p>Foire de question & Aide</p>
+                        <p class="arabic-text">الأسئلة الشائعة والمساعدة</p>
+                    </button>
+                </div>
+                
+                <p class="step-description">Choisissez l'option qui vous convient le mieux.</p>
+            </div>
+
+            <!-- Step 3: FAQ and Contact/Video -->
+            <div class="step step-3">
+                <div class="step-3-container">
+                    <!-- Left side: FAQ -->
+                    <div class="step-3-left">
+                        <h3 class="step-3-title">Questions fréquentes</h3>
+                        
+                        <div class="faq-container">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>Comment fonctionne Boti School ?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Boti School est une plateforme complète qui vous permet de gérer facilement votre établissement scolaire. Elle offre des outils pour la gestion des élèves, des notes, de la communication et bien plus encore.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>Quels sont les tarifs ?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Nos tarifs sont adaptés à la taille de votre établissement. Contactez-nous pour obtenir un devis personnalisé adapté à vos besoins spécifiques.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>Est-ce que mes données sont sécurisées ?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Absolument ! Nous utilisons les dernières technologies de sécurité pour protéger vos données. Toutes les informations sont cryptées et stockées de manière sécurisée.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>Puis-je essayer avant d'acheter ?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Oui ! Nous offrons une période d'essai gratuite de 30 jours pour que vous puissiez tester toutes les fonctionnalités de Boti School.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="step-3-right">
+                        <p class="step-3-description">Notre équipe est là pour répondre à toutes vos questions et vous accompagner dans votre découverte de Boti School.</p>
+                        
+                        <div class="contact-buttons">
+                            <a href="https://wa.me/1234567890" class="contact-btn whatsapp-btn" target="_blank">
+                                <img src="assets/images/whatsapp.png" alt="WhatsApp">
+                                <div>
+                                    <p>WhatsApp</p>
+                                    <span>06 XX XX XX XX</span>
+                                </div>
+                            </a>
+                            <a href="tel:+1234567890" class="contact-btn call-btn">
+                                <img src="assets/images/appel.png" alt="Appeler">
+                                <div>
+                                    <p>Appeler</p>
+                                    <span>06 XX XX XX XX</span>
+                                </div>
+
+                            </a>
+                        </div>
+                        
+                        <div class="video-section">
+                            <div class="learn-vd">
+                                <div class="video-thumbnail" id="videoThumbnail">
+                                    <img src="assets/images/video-thumb.png" alt="Video">
+                                    <div class="play-button">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="video-info">
+                                    <h4 class="video-title">Découvrez Boti School en vidéo</h4>
+                                    <p class="video-description">Une présentation complète de notre plateforme et de toutes ses fonctionnalités en quelques minutes.</p>
+                                </div>
+                            </div>
+                            <div class="learn-vd">
+                                <div class="video-thumbnail" id="videoThumbnail">
+                                    <img src="assets/images/video-thumb.png" alt="Video">
+                                    <div class="play-button">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="video-info">
+                                    <h4 class="video-title">Découvrez Boti School en vidéo</h4>
+                                    <p class="video-description">Une présentation complète de notre plateforme et de toutes ses fonctionnalités en quelques minutes.</p>
+                                </div>
+                            </div>
+                            <div class="learn-vd">
+                                <div class="video-thumbnail" id="videoThumbnail">
+                                    <img src="assets/images/video-thumb.png" alt="Video">
+                                    <div class="play-button">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="video-info">
+                                    <h4 class="video-title">Découvrez Boti School en vidéo</h4>
+                                    <p class="video-description">Une présentation complète de notre plateforme et de toutes ses fonctionnalités en quelques minutes.</p>
+                                </div>
+                            </div>
+                            <div class="learn-vd">
+                                <div class="video-thumbnail" id="videoThumbnail">
+                                    <img src="assets/images/video-thumb.png" alt="Video">
+                                    <div class="play-button">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="video-info">
+                                    <h4 class="video-title">Découvrez Boti School en vidéo</h4>
+                                    <p class="video-description">Une présentation complète de notre plateforme et de toutes ses fonctionnalités en quelques minutes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Success Step -->
