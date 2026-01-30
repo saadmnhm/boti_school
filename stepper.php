@@ -134,7 +134,6 @@
                     </button>
                 </div>
                 
-                <p class="step-description">Choisissez l'option qui vous convient le mieux.</p>
             </div>
 
             <!-- Step 3: FAQ and Contact/Video -->
@@ -233,30 +232,7 @@
                                     <p class="video-description">Une présentation complète de notre plateforme et de toutes ses fonctionnalités en quelques minutes.</p>
                                 </div>
                             </div>
-                            <div class="learn-vd">
-                                <div class="video-thumbnail" id="videoThumbnail">
-                                    <img src="assets/images/video-thumb.png" alt="Video">
-                                    <div class="play-button">
-                                        <i class="fas fa-play"></i>
-                                    </div>
-                                </div>
-                                <div class="video-info">
-                                    <h4 class="video-title">Découvrez Boti School en vidéo</h4>
-                                    <p class="video-description">Une présentation complète de notre plateforme et de toutes ses fonctionnalités en quelques minutes.</p>
-                                </div>
-                            </div>
-                            <div class="learn-vd">
-                                <div class="video-thumbnail" id="videoThumbnail">
-                                    <img src="assets/images/video-thumb.png" alt="Video">
-                                    <div class="play-button">
-                                        <i class="fas fa-play"></i>
-                                    </div>
-                                </div>
-                                <div class="video-info">
-                                    <h4 class="video-title">Découvrez Boti School en vidéo</h4>
-                                    <p class="video-description">Une présentation complète de notre plateforme et de toutes ses fonctionnalités en quelques minutes.</p>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
